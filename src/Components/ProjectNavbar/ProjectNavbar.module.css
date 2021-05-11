@@ -1,0 +1,22 @@
+.blackLine {
+    height: 10px;
+    width: 95vw;
+    background-color: black;
+    margin-top: 25px;
+    margin-left: 80px;
+}
+
+.ul {
+    display: flex;
+    list-style: none;
+    width: 90%;
+    margin: auto;
+}
+
+.li {
+    font-size: 2rem;
+    width: 300px;
+    margin: 5px 10px;
+    text-transform: uppercase;
+    text-align: center;
+}

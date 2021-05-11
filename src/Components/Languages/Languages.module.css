@@ -1,0 +1,59 @@
+.languageSection {
+    height: 600px;
+}
+
+.container {
+    height: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100vw;
+}
+
+.leftColumn {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    width: 50vw;
+    position: relative;
+    height: 500px;
+}
+
+.rightColumn {
+    width: 50vw;
+    height: 500px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    position: relative;
+}
+
+.labelContainer {
+    width: 225px;
+    height: 180px;
+    border: 2px solid black;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.labelItemsContainer {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.labelItem {
+    margin: 20px;
+}
+
+.colorBox {
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.sectionTitle {
+    width: 50vw;
+    font-size: 5rem;
+    position: absolute;
+    bottom: 0;
+}

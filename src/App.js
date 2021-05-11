@@ -1,4 +1,7 @@
 import './App.css';
+import Banner from './Components/Banner/Banner';
+import Languages from './Components/Languages/Languages';
+
 
 function App() {
 
@@ -7,11 +10,8 @@ function App() {
 
   return (
     <div className="App">
-      <h1>This Site is Under Construction!</h1>
-      <h3>&copy; Tyler Conti 2021</h3>
-      <a href="https://github.com/tjconti12/" target="_blank">Link to github</a>
-      {" "}
-      <a href="https://www.linkedin.com/in/tylerjconti/" target="_blank">Link to linkedin</a>
+      <Banner />
+      <Languages />
     </div>
   );
 }
