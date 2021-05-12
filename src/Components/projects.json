@@ -1,0 +1,68 @@
+[
+    {
+        "id": 1,
+        "title": "Cat Crusader",
+        "description": "Fun nintendo style browser based game",
+        "motivation": "I was inspired to make a tile based game using vanilla javascript, html, and css. I wanted to create a fun and challenging game where the player has full control of the character. I wanted to test my modularity and organization by being able to reuse multiple sections of code.",
+        "buildStatus": "The game is currently playable up to level 4. It also includes a tutorial level that is optional. There are a few bugs present with the collision mechanics where the player will randomly fall through a platform when jumping on it. Currently, if the game throws an error, the entire application freezes.",
+        "tech": "Vanilla javascript, html, and sass for css. Used an application called tiled for making the maps.",
+        "features": "The game features a reusable tile map builder. You can get the map numbers from tiled when exporting as a js map file. Then just update the map array, the map column and row numbers, pixel size, and the tile atlas row numbers and column numbers. This allows the creation of multiple maps using multiple different tilesets. The game also includes AI enemy characters that move on their own.",
+        "photos": [
+            {"url": "/ProjectImages/Cat1.png", "legend": "Main Menu"},
+            {"url": "/ProjectImages/Cat2.png", "legend": "Level 1 - Escaping From Home"},
+            {"url": "/ProjectImages/Cat3.png", "legend": "Level 2 - Leaving the Neighborhood"},
+            {"url": "/ProjectImages/Cat4.png", "legend": "Level 3 - Lost In The Woods"},
+            {"url": "/ProjectImages/Cat5.png", "legend": "Level 4 - Out To Sea"}
+        ],
+        "languages": [
+            {"url": "/ProjectImages/javascript.png", "percent": 92.8}, 
+            {"url": "ProjectImages/sass.png", "percent": 4.2}, 
+            {"url": "ProjectImages/html.png", "percent": 3.0}
+        ],
+        "languageBar": "/ProjectImages/CatCrusaderLanguages.png"
+    },
+    {
+        "id": 2,
+        "title": "Get Away",
+        "description": "Web Application for finding great local foods, hot spots, and events",
+        "motivation": "I have always been inspired to make an application that focuses on locating great local things to do. The best way to find cool new spots is to see what others have said about it. This is an early release, however the goal is to add a lot more features that really make this application stand out.",
+        "buildStatus": "The application is currently in an early release. All search data is being received through the Yelp Api. One future feature that will really make this application stand out, is the planned release of a routing feature. The user will be asked how long they want to explore for (15 minutes, 30 minutes, 1 hour). Then the application will match the user with local events, restaurants, bars, parks, etc. that they can explore for their selected time. Using the power of Mapbox routing, the application will give them the best route to hit the best spots in the alloted time.",
+        "tech": "React, REST API, Material-ui, node dependencies.",
+        "features": "Currently the user has the option of searching using three pre selected categories or using a custom search. The three categories are food, explore, and events. The application includes a fully functional map with search capabilites and user location based searching.",
+        "photos": [
+            {"url": "/ProjectImages/GetAway1.png", "legend": "Home Screen"},
+            {"url": "/ProjectImages/GetAway2.png", "legend": "Search Function"},
+            {"url": "/ProjectImages/GetAway3.png", "legend": "Map"},
+            {"url": "/ProjectImages/GetAway4.png", "legend": "Map Popup"},
+            {"url": "/ProjectImages/GetAway5.png", "legend": "Custom Search"},
+            {"url": "/ProjectImages/GetAway6.png", "legend": "Search Results"}
+        ],
+        "languages": [
+            {"url": "/ProjectImages/javascript.png", "percent": 71.9}, 
+            {"url": "ProjectImages/css.png", "percent": 4.2}, 
+            {"url": "ProjectImages/html.png", "percent": 6.0}
+        ],
+        "languageBar": "/ProjectImages/GetAwayLanguages.png"
+    },
+    {
+    "id": 3,
+    "title": "Travlr",
+    "description": "Yelp style full stack web application where users can retrieve and add entries of local food and drinks in the NYC area",
+    "motivation": "This page was inspired by the popular search sites such as yelp and foursquare. This was a group collaboration, and the group wanted to create a clean and useful alternative to the other popular food/drink sites.",
+    "buildStatus": "The application is fully functional for food and drink categories. Future plans would include other categories, a way for users to update existing entries, and user authentication. We also would like the add a rating system for each of the entries.",
+    "tech": "React, css, and REST APIs for front end, python and django for back end.",
+    "features": "The ability to add new entries to the database, with selectable tags for each place. When a user inputs an address into the new entry form, the address is run through a geocoder that returns the longitude and latitude before storing to the database. This allows the new location to appear at the correct spot on the map.",
+    "photos": [
+        {"url": "/ProjectImages/Travlr1.png", "legend": "Home Screen"},
+        {"url": "/ProjectImages/Travlr2.png", "legend": "Food List"},
+        {"url": "/ProjectImages/Travlr3.png", "legend": "Detailed Food Page"},
+        {"url": "/ProjectImages/Travlr4.png", "legend": "Add New Entry"}
+    ],
+    "languages": [
+        {"url": "/ProjectImages/javascript.png", "percent": 63.7}, 
+        {"url": "ProjectImages/css.png", "percent": 31.1}, 
+        {"url": "ProjectImages/html.png", "percent": 5.2}
+    ],
+    "languageBar": "/ProjectImages/GetAwayLanguages.png"
+    }
+]
