@@ -20,7 +20,7 @@ const Banner = () => {
                 <div className={bannerStyles.contentContainer}>
                     <h2 className={bannerStyles.name}>TYLER CONTI</h2>
                     <h3 className={bannerStyles.occupation}>SOFTWARE DEVELOPER</h3>
-                    <p className={bannerStyles.brandStatement}>Software developer with an interest in new technologies, learning, science and aviation. I lave good knowledge of front-end technology. I love structure and order, and I also stand for quality.</p>
+                    <p className={bannerStyles.brandStatement}>I am a software developer with a background in Biology and Aviation. I aim to work with and motivate others to collectively solve complex problems with creative solutions. I bring my passion for knowledge and experience into each opportunity that I am given. My unique background coupled with experience in teaching and leadership enables me to approach each project with a logical and empathetic perspective.</p>
                     <h3 className={bannerStyles.blogPosts}>BLOG POSTS</h3>
                     <a className={bannerStyles.link} href="https://medium.com/geekculture/make-your-own-tile-map-with-vanilla-javascript-a627de67b7d9" target="_blank" rel="noopener noreferrer">Make Your Own Tile Map with Vanilla Javascript</a>
                     <h3 className={bannerStyles.connectWithMe}>CONNECT WITH ME</h3>
