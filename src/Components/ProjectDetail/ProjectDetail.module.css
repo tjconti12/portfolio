@@ -119,6 +119,7 @@
 @media screen and (max-width: 600px) {
     .projectSection {
         height: 1450px;
+        overflow-x: hidden;
     }
 
     .gridContainer {
@@ -126,8 +127,8 @@
     }
 
     .leftColumn {
-        width: 90vw;
-        margin-left: 0px;
+        width: 120vw;
+        margin-left: -10px;
     }
 
     .rightColumn {
