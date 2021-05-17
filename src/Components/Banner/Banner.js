@@ -2,7 +2,7 @@ import * as bannerStyles from './Banner.module.css';
 import PortfolioProfilePic from '../../Images/PortfolioProfilePic.jpg';
 import linkedin from '../../Images/linkedin.png';
 import medium from '../../Images/Medium.png';
-import codepen from '../../Images/codepen.png';
+import github from '../../Images/github.png';
 
 
 const Banner = () => {
@@ -31,8 +31,8 @@ const Banner = () => {
                         <div className={bannerStyles.connectLogoContainer}>
                             <a className={bannerStyles.link} href="https://tjconti12.medium.com/" target="_blank" rel="noopener noreferrer"><img className={bannerStyles.connectLogo} src={medium} alt="medium logo" /></a>
                         </div>
-                        <div className={bannerStyles.connectLogoContainer}>
-                            <a className={bannerStyles.link} href="https://codepen.io/tjconti12" target="_blank" rel="noopener noreferrer"><img className={bannerStyles.connectLogo} src={codepen} alt="codepen logo" /></a>
+                        <div className={bannerStyles.connectLogoContainerGit}>
+                            <a className={bannerStyles.link} href="https://github.com/tjconti12/" target="_blank" rel="noopener noreferrer"><img className={bannerStyles.connectLogo} src={github} alt="github logo" /></a>
                         </div>
                     </div>
                 </div>

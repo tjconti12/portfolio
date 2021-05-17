@@ -100,6 +100,10 @@
     margin: 0 10px;
 }
 
+.connectLogoContainerGit {
+    width: 70px;  
+}
+
 .connectLogo {
     width: 100%;
     max-height: 100%;
@@ -224,6 +228,7 @@
         width: 35px;
         height: 35px;
     }
+
 }
 
 @media screen and (max-width: 750px) {
@@ -243,6 +248,10 @@
     .connectLogoContainer {
         width: 30px;
         height: 30px;
+    }
+
+    .connectLogoContainerGit {
+        width: 50px;  
     }
 }
 

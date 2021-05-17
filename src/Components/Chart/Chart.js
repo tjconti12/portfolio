@@ -1,16 +1,15 @@
-// import React, { useState, ComponentProps } from 'react';
+
 import { PieChart } from 'react-minimal-pie-chart';
 import * as chartStyles from './Chart.module.css';
-import { uuid } from 'uuidv4';
 
 const Chart = ({ languages }) => {
 
-
+  
 
 
   let colors = ['yellow', 'green', 'pink', 'orange', 'red']
   const labelStyle = {
-    fontSize: '4px',
+    fontSize: '4px'
   }
 
   if(!languages) return <h1>Loading</h1>
@@ -27,11 +26,12 @@ const Chart = ({ languages }) => {
         labelStyle={{
             ...labelStyle
         }}
-        lineWidth={50}
+        lineWidth={60}
         paddingAngle={5}
         animate={true}
         animationDuration={500}
         radius={20}
+        center={[60, 50]}
     />
     <div className={chartStyles.labelItemsContainer}>
         {languages.map((obj, index) => {
