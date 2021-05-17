@@ -12,8 +12,10 @@ const Banner = () => {
                 <h1 className={bannerStyles.aboutMe}>ABOUT ME</h1>
             </div>
             <div className={bannerStyles.rightColumn}>
-                <div className={bannerStyles.mainImgContainer}>
-                    <img className={bannerStyles.mainImg} src={PortfolioProfilePic} alt="Author Smiling" />
+                <div className={bannerStyles.leftColumnImgContainer}>
+                    <div className={bannerStyles.mainImgContainer}>
+                        <img className={bannerStyles.mainImg} src={PortfolioProfilePic} alt="Author Smiling" />
+                    </div>
                 </div>
                 <div className={bannerStyles.contentContainer}>
                     <h2 className={bannerStyles.name}>TYLER CONTI</h2>

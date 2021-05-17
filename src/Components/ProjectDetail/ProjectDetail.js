@@ -16,26 +16,14 @@ const ProjectDetail = ({ details }) => {
                 <h2 className={projectStyles.title}>{details.title}</h2>
                 <h4 className={projectStyles.description}>{details.description}</h4>
                 <h3 className={projectStyles.h3}>Motivation</h3>
-                <p>{details.motivation}</p>
+                <p className={projectStyles.p}>{details.motivation}</p>
                 <h3 className={projectStyles.h3}>Build Status</h3>
-                <p>{details.buildStatus}</p>
+                <p className={projectStyles.p}>{details.buildStatus}</p>
                 <h3 className={projectStyles.h3}>Tech/Framework Used</h3>
-                <p>{details.tech}</p>
+                <p className={projectStyles.p}>{details.tech}</p>
                 <h3 className={projectStyles.h3}>Features</h3>
-                <p>{details.features}</p>
+                <p className={projectStyles.p}>{details.features}</p>
                 <div className={projectStyles.logoContainer}>
-                    {/* <div className={projectStyles.logoImgContainer}>
-                        <img className={projectStyles.logoImg} src={javascript} alt="" />
-                        <p>92.8%</p>
-                    </div>
-                    <div className={projectStyles.logoImgContainer}>
-                        <img className={projectStyles.logoImg} src={sass} alt="" />
-                        <p>4.2%</p>
-                    </div>
-                    <div className={projectStyles.logoImgContainer}>
-                        <img className={projectStyles.logoImg} src={html} alt="" />
-                        <p>3.0%</p>
-                    </div> */}
                     {details.languages.map(lang => {
                         return (
                             <div className={projectStyles.logoImgContainer}>

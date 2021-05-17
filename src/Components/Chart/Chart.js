@@ -32,18 +32,16 @@ const Chart = ({ languages }) => {
         animationDuration={500}
         radius={20}
     />
-   
-          <div className={chartStyles.labelItemsContainer}>
-              {languages.map((obj, index) => {
-                  return (
-                      <div className={chartStyles.labelItem}>
-                          <h4 className={chartStyles.labelName}>{obj[0]}</h4>
-                          <div className={chartStyles.colorBox} style={{"backgroundColor" : colors[index], "width": "20px", "height": "20px"}}></div>
-                      </div>
-                  )
-              })}
-          </div>
-      
+    <div className={chartStyles.labelItemsContainer}>
+        {languages.map((obj, index) => {
+            return (
+                <div className={chartStyles.labelItem}>
+                    <h4 className={chartStyles.labelName}>{obj[0]}</h4>
+                    <div className={chartStyles.colorBox} style={{"backgroundColor" : colors[index]}}></div>
+                </div>
+            )
+        })}
+    </div>
     </div>
   )
 }

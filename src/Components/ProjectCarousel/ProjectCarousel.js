@@ -5,7 +5,7 @@ import * as carouselStyles from './ProjectCarousel.module.css';
 const ProjectCarousel = ({ details }) => {
     return (
         <div>
-        <Carousel width="90%">
+        <Carousel width="80%" >
             {details.photos.map(photo => {
                 return (
                     <div className={carouselStyles.carouselContainer}>

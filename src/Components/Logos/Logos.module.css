@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -15,9 +15,67 @@
 .imgContainer {
     width: 50px;
     height: 50px;
-    margin: 0 10px;
+    margin: 20px 10px;
 }
 
 .logo {
     width: 100%;
+}
+
+@media screen and (max-width: 1275px) {
+    .imgContainer {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .imgContainer {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .logoContainer {
+        width: 40vw;
+        top: 30%;
+    }
+
+    .imgContainer {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .logoContainer {
+        top: 35%;
+    }
+
+    .imgContainer {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .logoContainer {
+        width: 35vw;
+        top: 30%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .logoContainer {
+        width: 90vw;
+        top: 30%;
+    }
+
+    .imgContainer {
+        width: 40px;
+        height: 40px;
+        margin: 20px 10px;
+    }
 }

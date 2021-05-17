@@ -6,8 +6,8 @@ import Logos from '../Logos/Logos';
 import Chart from '../Chart/Chart';
 
 const Languages = () => {
-    const [repos, setRepos] = useState([]);
-    const [languages, setLanguages] = useState([]);    
+    const [repos, setRepos] = useState(null);
+    const [languages, setLanguages] = useState(null);    
 
     const items = [];
 
@@ -26,18 +26,25 @@ const Languages = () => {
 
     const getLanguages = () => {
         let languageTotal = [];
-        repos.map(async repo => {
-            const response = await fetch(repo.languages_url);
-            const data = await response.json();
-            for(const key in data){
-                if(languageTotal[key]){
-                    languageTotal[key] += data[key]
-                } else {
-                    languageTotal[key] = data[key]
+        if(!repos === []) {
+            repos.map(async repo => {
+                try {
+                    const response = await fetch(repo.languages_url);
+                    const data = await response.json();
+                    for(const key in data){
+                        if(languageTotal[key]){
+                            languageTotal[key] += data[key]
+                        } else {
+                            languageTotal[key] = data[key]
+                        }
+                    }
+                    setLanguages(Object.entries(languageTotal))
+                } catch (error) {
+                    console.log(error)
                 }
-            }
-            setLanguages(Object.entries(languageTotal))
-        })
+                
+            })
+        }
     }
 
     useEffect(() => {
@@ -52,10 +59,12 @@ const Languages = () => {
 
     return (
         <div className={languageStyles.languageSection}>
-            <ProjectNavbar />
             <div className={languageStyles.container}>
                 <div className={languageStyles.leftColumn}>
+                {languages ?
                     <Chart languages={languages} />
+                    : <h2 className={languageStyles.failedToLoad}>Sorry! The Data Failed To Load From Github. View the stats at <a target="_blank" href="https://github.com/tjconti12/">Github</a></h2>
+                }
                 </div>
                 <div className={languageStyles.rightColumn}>
                     <Logos />
