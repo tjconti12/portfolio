@@ -1,11 +1,11 @@
 .nav {
     position: sticky;
-    top: 10px;
-    z-index: 1000;
+    top: 0px;
+    z-index: 100000;
     background-color: white;
     width: 100vw;
     padding: 0 10px;
-    height: 50px;
+    height: 100px;
 }
 
 .blackLine {
@@ -39,5 +39,15 @@
 @media screen and (max-width: 950px) {
     .li {
         font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .nav {
+        height: 70px;
+    }
+
+    .li {
+        font-size: 1.25em;
     }
 }

@@ -1,7 +1,5 @@
 import { useState, useEffect } from 'react';
-import ProjectNavbar from "../ProjectNavbar/ProjectNavbar";
 import * as languageStyles from './Languages.module.css';
-import { PieChart } from 'react-minimal-pie-chart';
 import Logos from '../Logos/Logos';
 import Chart from '../Chart/Chart';
 
@@ -9,13 +7,13 @@ const Languages = () => {
     const [repos, setRepos] = useState(null);
     const [languages, setLanguages] = useState(null);    
 
-    const items = [];
-
-    
-
     const getRepos = async () => {
         try {
-            const response = await fetch('https://api.github.com/users/tjconti12/repos');
+            const response = await fetch('https://api.github.com/users/tjconti12/repos', {
+                headers: {
+                    Authorization: `token ${process.env.REACT_APP_GITHUB_TOKEN}`
+                }
+            });
             const data = await response.json();
             setRepos(data)
         } catch (error) {
@@ -26,10 +24,14 @@ const Languages = () => {
 
     const getLanguages = () => {
         let languageTotal = [];
-        if(!repos === []) {
+        if(repos) {
             repos.map(async repo => {
                 try {
-                    const response = await fetch(repo.languages_url);
+                    const response = await fetch(repo.languages_url, {
+                        headers: {
+                            Authorization: `token ${process.env.REACT_APP_GITHUB_TOKEN}`
+                        }
+                    });
                     const data = await response.json();
                     for(const key in data){
                         if(languageTotal[key]){
@@ -63,7 +65,7 @@ const Languages = () => {
                 <div className={languageStyles.leftColumn}>
                 {languages ?
                     <Chart languages={languages} />
-                    : <h2 className={languageStyles.failedToLoad}>Sorry! The Data Failed To Load From Github. View the stats at <a target="_blank" href="https://github.com/tjconti12/">Github</a></h2>
+                    : <h2 className={languageStyles.failedToLoad}>Sorry! The Data Failed To Load From Github. View the stats at <a target="_blank" rel="noopener noreferrer" href="https://github.com/tjconti12/">Github</a></h2>
                 }
                 </div>
                 <div className={languageStyles.rightColumn}>

@@ -22,17 +22,17 @@ const Banner = () => {
                     <h3 className={bannerStyles.occupation}>SOFTWARE DEVELOPER</h3>
                     <p className={bannerStyles.brandStatement}>Software developer with an interest in new technologies, learning, science and aviation. I lave good knowledge of front-end technology. I love structure and order, and I also stand for quality.</p>
                     <h3 className={bannerStyles.blogPosts}>BLOG POSTS</h3>
-                    <a className={bannerStyles.link} href="https://medium.com/geekculture/make-your-own-tile-map-with-vanilla-javascript-a627de67b7d9" target="_blank">Make Your Own Tile Map with Vanilla Javascript</a>
+                    <a className={bannerStyles.link} href="https://medium.com/geekculture/make-your-own-tile-map-with-vanilla-javascript-a627de67b7d9" target="_blank" rel="noopener noreferrer">Make Your Own Tile Map with Vanilla Javascript</a>
                     <h3 className={bannerStyles.connectWithMe}>CONNECT WITH ME</h3>
                     <div className={bannerStyles.connectionLogos}>
                         <div className={bannerStyles.connectLogoContainer}>
-                            <a className={bannerStyles.link} href="https://www.linkedin.com/in/tylerjconti/" target="_blank"><img className={bannerStyles.connectLogo} src={linkedin} alt="linkedin logo" /></a>
+                            <a className={bannerStyles.link} href="https://www.linkedin.com/in/tylerjconti/" target="_blank" rel="noopener noreferrer"><img className={bannerStyles.connectLogo} src={linkedin} alt="linkedin logo" /></a>
                         </div>
                         <div className={bannerStyles.connectLogoContainer}>
-                            <a className={bannerStyles.link} href="https://tjconti12.medium.com/" target="_blank"><img className={bannerStyles.connectLogo} src={medium} alt="medium logo" /></a>
+                            <a className={bannerStyles.link} href="https://tjconti12.medium.com/" target="_blank" rel="noopener noreferrer"><img className={bannerStyles.connectLogo} src={medium} alt="medium logo" /></a>
                         </div>
                         <div className={bannerStyles.connectLogoContainer}>
-                            <a className={bannerStyles.link} href="https://codepen.io/tjconti12" target="_blank" ><img className={bannerStyles.connectLogo} src={codepen} alt="codepen logo" /></a>
+                            <a className={bannerStyles.link} href="https://codepen.io/tjconti12" target="_blank" rel="noopener noreferrer"><img className={bannerStyles.connectLogo} src={codepen} alt="codepen logo" /></a>
                         </div>
                     </div>
                 </div>

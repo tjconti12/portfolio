@@ -15,9 +15,9 @@
             {"url": "/ProjectImages/Cat5.png", "legend": "Level 4 - Out To Sea"}
         ],
         "languages": [
-            {"url": "/ProjectImages/javascript.png", "percent": 92.8}, 
-            {"url": "ProjectImages/sass.png", "percent": 4.2}, 
-            {"url": "ProjectImages/html.png", "percent": 3.0}
+            {"url": "/ProjectImages/javascript.png", "percent": 92.8, "alt": "javascript logo"}, 
+            {"url": "ProjectImages/sass.png", "percent": 4.2, "alt": "sass logo"}, 
+            {"url": "ProjectImages/html.png", "percent": 3.0, "alt": "html logo" }
         ],
         "languageBar": "/ProjectImages/CatCrusaderLanguages.png"
     },
@@ -38,9 +38,9 @@
             {"url": "/ProjectImages/GetAway6.png", "legend": "Search Results"}
         ],
         "languages": [
-            {"url": "/ProjectImages/javascript.png", "percent": 71.9}, 
-            {"url": "ProjectImages/css.png", "percent": 4.2}, 
-            {"url": "ProjectImages/html.png", "percent": 6.0}
+            {"url": "/ProjectImages/javascript.png", "percent": 71.9, "alt": "javascript logo"}, 
+            {"url": "ProjectImages/css.png", "percent": 4.2, "alt": "css logo"}, 
+            {"url": "ProjectImages/html.png", "percent": 6.0, "alt": "html logo"}
         ],
         "languageBar": "/ProjectImages/GetAwayLanguages.png"
     },
@@ -59,9 +59,9 @@
         {"url": "/ProjectImages/Travlr4.png", "legend": "Add New Entry"}
     ],
     "languages": [
-        {"url": "/ProjectImages/javascript.png", "percent": 63.7}, 
-        {"url": "ProjectImages/css.png", "percent": 31.1}, 
-        {"url": "ProjectImages/html.png", "percent": 5.2}
+        {"url": "/ProjectImages/javascript.png", "percent": 63.7, "alt": "javascript logo"}, 
+        {"url": "ProjectImages/css.png", "percent": 31.1, "alt": "css logo"}, 
+        {"url": "ProjectImages/html.png", "percent": 5.2, "alt": "html logo"}
     ],
     "languageBar": "/ProjectImages/TravlrLanguages.png"
     }

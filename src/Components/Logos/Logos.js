@@ -22,55 +22,55 @@ const Logos = () => {
     return (
         <div className={logoStyles.logoContainer}>
             <div className={logoStyles.imgContainer}>
-                <img className={logoStyles.logo} src={arduino} alt="" />
+                <img className={logoStyles.logo} src={arduino} alt="arduino logo" />
             </div>
             <div className={logoStyles.imgContainer}>
-                <img className={logoStyles.logo} src={bootstrap} alt="" />
+                <img className={logoStyles.logo} src={bootstrap} alt="bootstrap logo" />
             </div>
             <div className={logoStyles.imgContainer}>
-                <img className={logoStyles.logo} src={css} alt="" />
+                <img className={logoStyles.logo} src={css} alt="css logo" />
             </div>
             <div className={logoStyles.imgContainer}>
-                <img className={logoStyles.logo} src={django} alt="" />
+                <img className={logoStyles.logo} src={django} alt="django logo" />
             </div>
             <div className={logoStyles.imgContainer}>
-                <img className={logoStyles.logo} src={express} alt="" />
+                <img className={logoStyles.logo} src={express} alt="express logo" />
             </div>
             <div className={logoStyles.imgContainer}>
-                <img className={logoStyles.logo} src={git} alt="" />
+                <img className={logoStyles.logo} src={git} alt="git logo" />
             </div>
             <div className={logoStyles.imgContainer}>
-                <img className={logoStyles.logo} src={heroku} alt="" />
+                <img className={logoStyles.logo} src={heroku} alt="heroku logo" />
             </div>
             <div className={logoStyles.imgContainer}>
-                <img className={logoStyles.logo} src={html} alt="" />
+                <img className={logoStyles.logo} src={html} alt="html logo" />
             </div>
             <div className={logoStyles.imgContainer}>
-                <img className={logoStyles.logo} src={javascript} alt="" />
+                <img className={logoStyles.logo} src={javascript} alt="javascript logo" />
             </div>
             <div className={logoStyles.imgContainer}>
-                <img className={logoStyles.logo} src={mongodb} alt="" />
+                <img className={logoStyles.logo} src={mongodb} alt="mongodb logo" />
             </div>
             <div className={logoStyles.imgContainer}>
-                <img className={logoStyles.logo} src={nodejs} alt="" />
+                <img className={logoStyles.logo} src={nodejs} alt="nodejs logo" />
             </div>
             <div className={logoStyles.imgContainer}>
-                <img className={logoStyles.logo} src={photoshop} alt="" />
+                <img className={logoStyles.logo} src={photoshop} alt="photoshop logo" />
             </div>
             <div className={logoStyles.imgContainer}>
-                <img className={logoStyles.logo} src={postgresql} alt="" />
+                <img className={logoStyles.logo} src={postgresql} alt="postgreSQL logo" />
             </div>
             <div className={logoStyles.imgContainer}>
-                <img className={logoStyles.logo} src={postman} alt="" />
+                <img className={logoStyles.logo} src={postman} alt="postman logo" />
             </div>
             <div className={logoStyles.imgContainer}>
-                <img className={logoStyles.logo} src={python} alt="" />
+                <img className={logoStyles.logo} src={python} alt="python logo" />
             </div>
             <div className={logoStyles.imgContainer}>
-                <img className={logoStyles.logo} src={react} alt="" />
+                <img className={logoStyles.logo} src={react} alt="react logo" />
             </div>
             <div className={logoStyles.imgContainer}>
-                <img className={logoStyles.logo} src={sass} alt="" />
+                <img className={logoStyles.logo} src={sass} alt="sass logo" />
             </div>
         </div>
     )

@@ -1,11 +1,8 @@
 import * as projectStyles from './ProjectDetail.module.css';
-import javascript from '../../Images/javascript.png';
-import sass from '../../Images/sass.png';
-import html from '../../Images/html.png';
 import ProjectCarousel from '../ProjectCarousel/ProjectCarousel';
+import { uuid } from 'uuidv4';
 
 const ProjectDetail = ({ details }) => {
-    console.log(details)
     return (
         <div className={projectStyles.projectSection}>
             <div className={projectStyles.gridContainer}>
@@ -26,14 +23,14 @@ const ProjectDetail = ({ details }) => {
                 <div className={projectStyles.logoContainer}>
                     {details.languages.map(lang => {
                         return (
-                            <div className={projectStyles.logoImgContainer}>
-                                <img className={projectStyles.logoImg} src={lang.url} alt="" />
+                            <div key={uuid()} className={projectStyles.logoImgContainer}>
+                                <img className={projectStyles.logoImg} src={lang.url} alt={lang.alt} />
                             <p>{lang.percent}%</p>
                     </div>
                         )
                     })}
                     <div className={projectStyles.languageBarContainer}>
-                        <img className={projectStyles.languageBar} src={details.languageBar} alt="" />
+                        <img className={projectStyles.languageBar} src={details.languageBar} alt="bar showing language used percentages" />
                     </div>
                 </div>
             </div>

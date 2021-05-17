@@ -1,6 +1,6 @@
 .projectSection {
     width: 100vw;
-    height: 600px;
+    height: 700px;
 }
 
 .gridContainer {
@@ -66,12 +66,12 @@
     align-items: center;
     justify-content: space-between;
     margin-top: 20px;
-    width: 90vw;
+    width: 100vw;
 }
 
 .footerTitle {
     text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: 1.5em;
     margin-left: 20px;
 }
 
@@ -154,5 +154,14 @@
         font-size: 1.5em;
         padding-left: 10px;
         margin-bottom: 10px;
+    }
+
+    .footerTitle {
+        font-size: 1em;
+        margin-left: 20px;
+    }
+
+    .blackBar {
+        width: 75vw;
     }
 }

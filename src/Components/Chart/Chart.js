@@ -1,6 +1,7 @@
-import React, { useState, ComponentProps } from 'react';
+// import React, { useState, ComponentProps } from 'react';
 import { PieChart } from 'react-minimal-pie-chart';
 import * as chartStyles from './Chart.module.css';
+import { uuid } from 'uuidv4';
 
 const Chart = ({ languages }) => {
 
