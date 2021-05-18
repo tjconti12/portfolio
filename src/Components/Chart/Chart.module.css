@@ -1,11 +1,17 @@
 .chartContainer {
-    width: 500px;
-    height: 500px;
+    width: 800px;
     position: absolute;
-    top: 30px;
+    top: 40%;
+    left: 60%;
+    transform: translate(-50%, -50%);
 }
 
-.labelContainer {
+.chartImg {
+    max-width: 100%;
+}
+
+
+/* .labelContainer {
     width: 225px;
     height: 300px;
     border: 2px solid black;
@@ -13,9 +19,9 @@
     position: absolute;
     top: 0;
     right: 0;
-}
+} */
 
-.labelItemsContainer {
+/* .labelItemsContainer {
     width: 225px;
     height: 300px;
     position: absolute;
@@ -25,60 +31,73 @@
     flex-flow: column;
     align-items: flex-end;
     justify-content: flex-start;
-}
+} */
 
-.labelItem {
+/* .labelItem {
     margin: 10px;
     display: flex;
-}
+} */
 
-.labelName {
+/* .labelName {
     margin-right: 10px;
     font-size: 1em;
-}
+} */
 
-.colorBox {
+/* .colorBox {
     width: 20px;
     height: 20px;
+} */
+
+@media screen and (max-width: 1200px) {
+    .chartContainer {
+        width: 750px;
+    }
 }
+
 
 @media screen and (max-width: 1050px) {
     .chartContainer {
-        width: 450px;
-        height: 450px;
-        margin-top: 35px;
+        width: 650px;
     }
     
-    .colorBox {
+    /* .colorBox {
         width: 15px;
         height: 15px;
-    }
+    } */
 }
 
 @media screen and (max-width: 900px) {
     .chartContainer {
-        width: 400px;
-        height: 400px;
-        margin-top: 65px;
-        left: -20px;
+        width: 600px;
+        left: 65%;
     }
     
-    .colorBox {
+    /* .colorBox {
         width: 15px;
         height: 15px;
+    } */
+}
+
+@media screen and (max-width: 800px) {
+    .chartContainer {
+        left: 70%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .chartContainer {
+        width: 550px;
     }
 }
 
 @media screen and (max-width: 650px) {
     .chartContainer {
         width: 100vw;
-        height: 400px;
-        margin-top: 0px;
-        left: -80px;
+        top: 50%;
     }
     
-    .colorBox {
+    /* .colorBox {
         width: 20px;
         height: 20px;
-    }
+    } */
 }
