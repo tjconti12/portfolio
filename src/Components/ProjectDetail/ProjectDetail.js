@@ -12,7 +12,7 @@ const ProjectDetail = ({ details }) => {
             <div className={projectStyles.rightColumn}>
                 <h2 className={projectStyles.title}>{details.title}</h2>
                 <h4 className={projectStyles.description}>{details.description}</h4>
-                <a className={projectStyles.link} href={details.url} target="_blank">Live Link Here</a>
+                <a className={projectStyles.link} href={details.url} target="_blank" rel="noopener noreferrer">Live Link Here</a>
                 <h3 className={projectStyles.h3}>Motivation</h3>
                 <p className={projectStyles.p}>{details.motivation}</p>
                 <h3 className={projectStyles.h3}>Build Status</h3>
