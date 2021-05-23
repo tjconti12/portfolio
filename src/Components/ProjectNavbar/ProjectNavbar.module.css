@@ -9,7 +9,7 @@
 }
 
 .blackLine {
-    height: 10px;
+    height: 8px;
     width: 95vw;
     background-color: black;
     /* margin-top: 25px;
@@ -22,19 +22,32 @@
 .ul {
     display: flex;
     list-style: none;
-    width: 90%;
+    width: 95%;
     margin: auto;
     position: absolute;
     top: 35px;
+    right: 0;
 }
 
 .li {
     font-size: 2em;
     width: 300px;
-    margin: 5px 10px;
+    margin: 5px 0px;
     text-transform: uppercase;
     text-align: center;
 }
+
+.h3 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+}
+
+.li:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
 
 @media screen and (max-width: 950px) {
     .li {

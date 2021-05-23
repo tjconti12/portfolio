@@ -9,22 +9,30 @@
 }
 
 .leftColumn {
-    width: 50vw;
+    width: 45vw;
     position: relative;
 }
 
-.aboutMe {
+.aboutMeContainer {
+    width: 350px;
+    text-align: right;
     position: absolute;
-    right: 0px;
-    font-size: 6em;
-    bottom: 10px;
+    right: 0;
+    bottom: 5%;
+
+}
+
+.aboutMe {
+    font-size: 6rem;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
 }
 
 .rightColumn {
-    width: 50vw;
+    width: 55vw;
     color: whitesmoke;
     display: grid;
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 1fr 1fr;
     position: relative;
 }
 
@@ -40,7 +48,7 @@
     min-width: 300px;
     position: absolute;
     left: 50%;
-    bottom: 25px;
+    bottom: 50px;
     transform: translateX(-50%);
 }
 
@@ -53,18 +61,22 @@
 .contentContainer {
     grid-column-start: 2;
     grid-column-end: span 1;
+    width: 100%;
+    padding-left: 0px;
 }
 
 .name {
     font-size: 2.5em;
-    margin-top: 100px;
-    margin-bottom: 20px;
-    font-family: Futura;
+    margin-top: 200px;
+    margin-bottom: 30px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
 }
 
 .occupation {
     font-size: 1.5em;
     margin-bottom: 20px;
+    font-family: 'Nunito', sans-serif;
 }
 
 .blogPosts {
@@ -73,90 +85,49 @@
 }
 
 .brandStatement {
-    width: 70%;
+    width: 80%;
     text-align: justify;
     font-weight: 700;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.link {
-    color: whitesmoke;
-}
 
-.connectWithMe {
-    margin-top: 30px;
-    margin-bottom: 10px;
-}
-
-.connectionLogos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.connectLogoContainer {
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    margin: 0 10px;
-}
-
-.connectLogoContainerGit {
-    width: 70px;  
-}
-
-.connectLogo {
-    width: 100%;
-    max-height: 100%;
-}
 
 @media screen and (max-width: 1200px) {
     .bannerContainer {
         font-size: 9px;
     }
 
-    .aboutMe {
+    .aboutMeContainer {
         right: 5px;
     }
 
     .rightColumn {
         gap: 10px;
     }
-
-    .brandStatement {
-        text-align: left;
-    }
-
-    .connectLogoContainer {
-        width: 45px;
-        height: 45px;
-    }
 }
 
 @media screen and (max-width: 1150px) {
-    .aboutMe {
+    .aboutMeContainer {
         right: 10px;
-        font-size: 5rem;
-        bottom: 10px;
+        bottom: 30px;
     }
-}
-
-@media screen and (max-width: 1100px) {
-    .leftColumn {
-        width: 45vw;
+    .aboutMe {
+        font-size: 5rem;
     }
 
     .rightColumn {
-        width: 55vw;
+        gap: 15px;
     }
 
-    .connectLogoContainer {
-        width: 40px;
-        height: 40px;
+    .name {
+        margin-top: 190px;
     }
+
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
     .leftColumn {
         width: 40vw;
     }
@@ -165,33 +136,32 @@
         width: 60vw;
     }
 
-    .aboutMe {
-        font-size: 4rem;
-        bottom: 15px;
-    }
-
-    .connectLogoContainer {
-        width: 35px;
-        height: 35px;
+    .aboutMeContainer {
+        right: 15px;
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
     .leftColumn {
         width: 35vw;
     }
 
     .rightColumn {
         width: 65vw;
+        gap: 25px;
     }
 
-    .connectLogoContainer {
-        width: 35px;
-        height: 35px;
+    .aboutMeContainer {
+        bottom: 35px;
+        right: 20px;
+    }
+
+    .aboutMe {
+        font-size: 4rem;
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
     .leftColumn {
         width: 30vw;
     }
@@ -199,40 +169,26 @@
     .rightColumn {
         width: 70vw;
     }
-
-    .aboutMe {
-        font-size: 3rem;
-        bottom: 20px;
-    }
-
-    .connectLogoContainer {
-        width: 35px;
-        height: 35px;
+    
+    .name {
+        margin-top: 180px;
     }
 }
+
+@media screen and (max-width: 850px) {
+    .name {
+        margin-top: 170px;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .name {
+        margin-top: 160px;
+    }
+}
+
 
 @media screen and (max-width: 800px) {
-    .leftColumn {
-        width: 30vw;
-    }
-
-    .rightColumn {
-        width: 70vw;
-    }
-
-    .aboutMe {
-        font-size: 3rem;
-        bottom: 20px;
-    }
-
-    .connectLogoContainer {
-        width: 35px;
-        height: 35px;
-    }
-
-}
-
-@media screen and (max-width: 750px) {
     .leftColumn {
         width: 25vw;
     }
@@ -241,39 +197,63 @@
         width: 75vw;
     }
 
+    .aboutMeContainer {
+        bottom: 40px;
+        right: 25px;
+    }
+
+    .aboutMe {
+        font-size: 3rem;
+    }
+}
+
+
+@media screen and (max-width: 750px) {
+    .leftColumn {
+        width: 25vw;
+    }
+
+    .rightColumn {
+        width: 75vw;
+        gap: 35px;
+    }
+
+    .aboutMeContainer {
+        bottom: 45px;
+        right: 35px;
+    }
+
     .aboutMe {
         font-size: 2.5rem;
-        bottom: 22.5px;
     }
 
-    .connectLogoContainer {
-        width: 30px;
-        height: 30px;
-    }
-
-    .connectLogoContainerGit {
-        width: 50px;  
+    .name {
+        margin-top: 120px;
     }
 }
 
 @media screen and (max-width: 700px) {
     .leftColumn {
-        width: 20vw;
+        width: 0vw;
     }
 
     .rightColumn {
-        width: 80vw;
+        width: 100vw;
+        padding-left: 30px;
     }
 
-    .aboutMe {
-        font-size: 2rem;
-        bottom: 25px;
+    .name {
+        margin-top: 180px;
+    }
+
+    .aboutMeContainer {
+        display: none;
     }
 }
 
 @media screen and (max-width: 650px) {
     .bannerContainer {
-        height: 1150px;
+        height: 1000px;
         width: 100vw;
         flex-flow: column;
         justify-content: center;
@@ -319,9 +299,5 @@
         text-align: justify;
         font-weight: 700;
         margin: 10px auto;
-    }
-
-    .link {
-        font-size: 1.5em;
     }
 }

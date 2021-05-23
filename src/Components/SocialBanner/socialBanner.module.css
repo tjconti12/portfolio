@@ -1,0 +1,80 @@
+.container {
+    background-color: #E8E8E8;
+    height: 300px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.square {
+    height: 220px;
+    width: 230px;
+    padding: 0 20px;
+    background-color: white;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.squareHeader {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+}
+
+.button {
+    width: 80%;
+    height: 20%;
+    background: none;
+    border: 3px solid #484848;
+    text-transform: uppercase;
+    color: #808080;
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+}
+
+.button:hover {
+    color: white;
+    background-color: black;
+    
+}
+
+
+.connectionLogos {
+    display: flex;
+    align-items: center;
+}
+
+.connectLogoContainer {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.connectLogoContainerMedium {
+    width: 30px;
+}
+
+.connectLogo {
+    width: 100%;
+    max-height: 100%;
+}
+
+.connectLogo:hover {
+    filter: invert(0.3);
+}
+
+@media screen and (max-width: 700px) {
+    .container {
+        flex-flow: column;
+        height: 800px;
+    }
+}

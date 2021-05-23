@@ -1,107 +1,65 @@
-.languageSection {
-    height: 600px;
-}
-
 .container {
-    height: 500px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    height: 300px;
     width: 100vw;
+    /* overflow: hidden; */
 }
 
-.leftColumn {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    width: 50vw;
-    position: relative;
-    height: 500px;
+.title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin: 4rem 0 3rem 0;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
 }
 
-.rightColumn {
-    width: 50vw;
-    height: 500px;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    position: relative;
+.listContainer {
+    width: 80vw;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    font-size: 1.3rem;
+    color: rgb(136, 134, 134);
 }
 
-
-.sectionTitle {
-    width: 50vw;
-    font-size: 4.5em;
-    position: absolute;
-    bottom: 0;
+.li {
+    font-size: 1.9rem;
+    color: #808080;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    margin: 0 15px;
 }
 
-.bottomBar {
-    height: 10px;
-    width: 95vw;
-    background-color: black;
-}
-
-.failedToLoad {
-    font-size: 2.5em;
-    margin-top: 150px;
-    margin-left: 15px;
+@media screen and (max-width: 1150px) {
+    .li {
+        font-size: 1.8rem;
+    }
 }
 
 @media screen and (max-width: 1100px) {
-    .sectionTitle {
-        font-size: 4em;
-    }
-}
-
-@media screen and (max-width: 1000px) {
-    .sectionTitle {
-        font-size: 3.5em;
-    }
-}
-
-@media screen and (max-width: 900px) {
-    .sectionTitle {
-        font-size: 3em;
-    }
-}
-
-@media screen and (max-width: 800px) {
-    .sectionTitle {
-        font-size: 2.5em;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    .sectionTitle {
-        font-size: 2em;
-    }
-}
-
-@media screen and (max-width: 650px) {
-    .languageSection {
-        height: 700px;
-        margin-bottom: 40px;
-    }
-
     .container {
-        display: flex;
-        flex-flow: column;
-        height: 700px;
-    }
-
-    .leftColumn {
-        width: 100vw;
-        position: relative;
-        height: 300px;
-    }
-    
-    .rightColumn {
-        width: 100vw;
         height: 400px;
-        margin-top: 0px;
-        position: relative;
+    }
+    .listContainer {
+        flex-wrap: wrap;
+        padding-left: 10%;
+        
     }
 
-    .sectionTitle {
-        width: 100vw;
-        margin-top: 50px;
+    .ul {
+        /* border: 2px solid red; */
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .container {
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .container {
+        height: 850px;
     }
 }

@@ -6,7 +6,7 @@ import { uuid } from 'uuidv4';
 const ProjectCarousel = ({ details }) => {
     return (
         <div>
-        <Carousel width="80%" >
+        <Carousel width="100%" >
             {details.photos.map(photo => {
                 return (
                     <div key={uuid()} className={carouselStyles.carouselContainer}>
