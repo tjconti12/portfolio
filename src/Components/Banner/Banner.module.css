@@ -50,12 +50,15 @@
     left: 50%;
     bottom: 50px;
     transform: translateX(-50%);
+    overflow: hidden;
 }
 
 .mainImg {
     
     width: 100%;
     border: 5px solid white;
+   
+    
 }
 
 .contentContainer {
@@ -253,10 +256,10 @@
 
 @media screen and (max-width: 650px) {
     .bannerContainer {
-        height: 1000px;
+        height: 850px;
         width: 100vw;
         flex-flow: column;
-        justify-content: center;
+        justify-content: start;
         align-items: center;
     }
 
@@ -268,10 +271,12 @@
         display: flex;
         flex-flow: column;
         width: 100%;
+        padding: 0;
     }
 
     .leftColumnImgContainer {
         height: 450px;
+        margin-top: 30px;
     }
 
     .mainImgContainer {

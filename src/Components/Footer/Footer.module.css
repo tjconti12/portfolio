@@ -1,0 +1,64 @@
+.footer {
+    height: 240px;
+}
+
+.topFooter {
+    height: 120px;
+    background-color: #f3f3f4;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottomFooter {
+    height: 120px;
+    background-color: #231f20;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.moreInfo {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.connectionLogos {
+    display: flex;
+    align-items: center;
+}
+
+.connectLogoContainer {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.connectLogoContainerMedium {
+    width: 30px;
+}
+
+.connectLogo {
+    width: 100%;
+    max-height: 100%;
+}
+
+.connectLogo:hover {
+    filter: invert(0.3);
+}
+
+.name {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+}
+
+.afterName {
+    margin: 0 10px;
+}

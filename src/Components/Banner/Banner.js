@@ -1,5 +1,5 @@
 import * as bannerStyles from './Banner.module.css';
-import PortfolioProfilePic from '../../Images/PortfolioProfilePic.jpg';
+import PortfolioProfilePic from '../../Images/bwProfilePic.jpg';
 import linkedin from '../../Images/linkedin.png';
 import medium from '../../Images/Medium.png';
 import github from '../../Images/github.png';
