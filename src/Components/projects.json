@@ -1,6 +1,25 @@
 [
     {
         "id": 1,
+        "title": "Güdeeds",
+        "description": "Community for Caregivers to Request and Offer Help",
+        "url": "https://www.gudeeds.xyz",
+        "repo": "https://github.com/tjconti12/favorsApp_FE",
+        "motivation": "This project was completed as part of a three day Hackathon event. Together with a team of UX designers and software developers, we were given the task of creating new technology for caregivers. Within a few hours, the idea for Güdeeds was created.",
+        "buildStatus": "Currently the application is designed for mobile. The application includes the use of a backend with a working database. Some stretch features such as user profiles is currently missing.",
+        "tech": "MERN stack application. React with Material UI and axios on the front end. Express, Node, and MongoDB on the backend/",
+        "features": "The application includes user authentication. A new user can register for an account and existing users can log in. Once logged in, the user is redirected to the home page. On the home page, the user can add a new request for help, or view exsisting requests to offer help. There is also a user profile page which is not fully functional at this time.",
+        "photos": [
+            {"url": "/ProjectImages/gudeeds/gudeeds1.png", "legend": "Log In Page"},
+            {"url": "/ProjectImages/gudeeds/gudeeds2.png", "legend": "Home Screen"},
+            {"url": "/ProjectImages/gudeeds/gudeeds3.png", "legend": "Add Event"},
+            {"url": "/ProjectImages/gudeeds/gudeeds4.png", "legend": "Event Detail"},
+            {"url": "/ProjectImages/gudeeds/gudeeds5.png", "legend": "My Schedule"},
+            {"url": "/ProjectImages/gudeeds/gudeeds6.png", "legend": "Profile Page"}
+        ]
+    },
+    {
+        "id": 2,
         "title": "Cat Crusader",
         "description": "Fun nintendo style browser based game",
         "url": "https://tjconti12.github.io/Cat-Crusader/",
@@ -24,7 +43,7 @@
         "languageBar": "/ProjectImages/CatCrusaderLanguages.png"
     },
     {
-        "id": 2,
+        "id": 3,
         "title": "Get Away",
         "description": "Web Application for finding great local foods, hot spots, and events",
         "url": "https://get-away.netlify.app/#/",
@@ -49,7 +68,7 @@
         "languageBar": "/ProjectImages/GetAwayLanguages.png"
     },
     {
-    "id": 3,
+    "id": 4,
     "title": "Travlr",
     "description": "Yelp style full stack web application where users can retrieve and add entries of local food and drinks in the NYC area",
     "url": "https://travlr-group.netlify.app/",
@@ -72,7 +91,7 @@
     "languageBar": "/ProjectImages/TravlrLanguages.png"
     },
     {
-        "id": 4,
+        "id": 5,
         "title": "Tailwind Aviation",
         "description": "Rent a plane for an hour, two hours, or even the whole day! Tailwind aviation is a mock airplane rental company. Make an account, login, and travel to a new destination! ",
         "url": "https://tailwind-aviation.netlify.app/",
@@ -91,7 +110,7 @@
         ]
     },
     {
-        "id": 5,
+        "id": 6,
         "title": "Space Battle",
         "description": "Click Based Browser Game using DOM manipulation and gifs for animation",
         "url": "https://tjconti12.github.io/Space-Battle/",

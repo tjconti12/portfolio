@@ -11,6 +11,7 @@ const ProjectNavbar = () => {
     const [thirdActive, setThirdActive] = useState(false);
     const [fourthActive, setFourthActive] = useState(false);
     const [fifthActive, setFifthActive] = useState(false);
+    const [sixthActive, setSixthActive] = useState(false);
 
     return (
         <nav className={navbarStyles.nav}>
@@ -39,6 +40,11 @@ const ProjectNavbar = () => {
                 <li className={navbarStyles.li} style={ fifthActive? {"border": "3px solid black"} : {'border': 'none'}}>
                     <ScrollLink to="5" spy={true} smooth={true} duration={500} offset={-100} onSetActive={() => setFifthActive(true)} onSetInactive={() => setFifthActive(false)}>
                         <h3 className={navbarStyles.h3}>Project 5</h3>
+                    </ScrollLink>
+                </li>
+                <li className={navbarStyles.li} style={ sixthActive? {"border": "3px solid black"} : {'border': 'none'}}>
+                    <ScrollLink to="6" spy={true} smooth={true} duration={500} offset={-100} onSetActive={() => setSixthActive(true)} onSetInactive={() => setSixthActive(false)}>
+                        <h3 className={navbarStyles.h3}>Project 6</h3>
                     </ScrollLink>
                 </li>
             </ul>
